@@ -113,3 +113,27 @@ end
 def get_domain_name_from_email_address(email)
 	email[/@(\w+)/, 1]
 end
+
+def titleize_a_string(str)
+	
+end
+
+def check_a_string_for_special_characters(str)
+	 /\W/ === str
+end
+
+def get_upper_limit_of(range)
+	range.max
+end
+
+def is_a_3_dot_range?(range)
+	range.exclude_end?
+end
+
+def square_root_of(num)
+	 Math.sqrt num
+end
+
+def word_count_a_file(file)
+  	
+end
