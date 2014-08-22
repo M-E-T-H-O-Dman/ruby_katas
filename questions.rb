@@ -45,3 +45,23 @@ end
 def separate_array_into_even_and_odd_numbers(array)
 	array.partition {|element| element.even?}
 end
+
+def number_of_elements_that_are_palindromes(array)
+	array.select {|element| element == element.reverse }.size
+end
+
+def shortest_word_in_array(array)
+	array.min_by(&:length)
+end
+
+def longest_word_in_array(array)
+	array.max_by(&:length)
+end
+
+def total_of_array(array)
+	array.inject{|sum,x| sum + x }
+end
+
+def double_array(array)
+	array * 2
+end
