@@ -65,3 +65,19 @@ end
 def double_array(array)
 	array * 2
 end
+
+def turn_symbol_into_string(sym)
+	sym.to_s
+end
+
+def average_of_array(array)
+	(array.inject{ |sum, el| sum + el }.to_f / array.size).round	
+end
+
+def get_elements_until_greater_than_five(array)
+	array.take_while {|n| n <= 5}
+end
+
+def convert_array_to_a_hash(array)
+	Hash[*array]
+end
